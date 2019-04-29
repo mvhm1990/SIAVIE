@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Matricula Directa SIAVIE</title>
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <style>
+            .fm-nav a{
+                color: #fff;
+                padding: 15px;
+            }
+
+            .fm-nav .disabled {
+                color: rgba(255,255,255,.5);
+            }
+
+            .fm-nav a:hover {
+                background: rgba(255,255,255,.1);
+            }
+            form{
+                background: rgba(0,0,0,0.1); 		 	
+                padding: 10px 20px; 		 	
+                box-sizing: border-box; 		 	
+                margin-top: 20px; 		 	
+                border-radius: 7px; 
+            }
+        </style>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">Menu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">Inicio <span class="sr-only">(Actual)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Blog
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="menu-categorias">
+                                <a href="#" class="dropdown-item">HTML</a>
+                                <a href="#" class="dropdown-item">CSS</a>
+                                <a href="#" class="dropdown-item">JS</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link disabled">Proximamente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <main class="main col">
+                    <div class="row">
+                        <div class="columna col-lg-10">
+                            <div class="widget nueva_entrada">
+                                <h3 class="titulo">Datos Generales del Alumno</h3>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Nombre: </b></label><br>
+                                            <input type="text" placeholder="Nombre del Alumno" style="width: 300px; height: 40px;" id="nombrealumno">                                             
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Apellido Paterno: </b></label><br>
+                                            <input type="text" placeholder="Apellido Paterno" style="width: 300px; height: 40px;" id="apellidoPalumno">                                             
+                                        </div>     
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Apellido Materno: </b></label><br>
+                                            <input type="text" placeholder="Apellido Materno" style="width: 300px; height: 40px;" id="apellidoMalumno">                                             
+                                        </div> 
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Direccion: </b></label><br>
+                                            <input type="text" placeholder="Direccion" style="width: 300px; height: 40px;" id="direccionalumno">                                             
+                                        </div> 
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>País: </b></label><br>
+                                            <select name="paises" class="form-control" style="width: 300px; height: 40px;">
+                                                <option>--Seleccione--</option>
+                                                <option>Peru</option>
+                                            </select> 
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Departamentos: </b></label><br>
+                                            <select name="departamentos" class="form-control" style="width: 300px; height: 40px;">
+                                                <option>--Seleccione--</option>
+                                                <option>Lima</option>
+                                                <option>Ancash</option>
+                                                <option>Apurímac</option>
+                                                <option>Arequipa</option>
+                                                <option>Ayacucho</option>
+                                                <option>Cajamarca</option>
+                                                <option>Cusco</option>
+                                                <option>Huancavelica</option>
+                                                <option>Huánuco</option>
+                                                <option>Ica</option>
+                                                <option>Junín</option>
+                                                <option>La Libertad</option>
+                                                <option>Lambayeque</option>
+                                            </select> 
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Provincias: </b></label><br>
+                                            <select name="provincias" class="form-control" style="width: 300px; height: 40px;">
+                                                <option>--Seleccione--</option>
+                                                <option>Lima</option>
+                                                <option>Barranca</option>
+                                                <option>Cajatambo</option>
+                                                <option>Cañete</option>
+                                                <option>Huaral</option>
+                                            </select> 
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Distritos: </b></label><br>
+                                            <select name="distritos" class="form-control" style="width: 300px; height: 40px;">
+                                                <option>--Seleccione--</option>
+                                                <option>Santiago de Surco</option>
+                                                <option>San Juan de Lurigancho</option>
+                                                <option>El agustino</option>
+                                                <option>Ate</option>
+                                                <option>Rimac</option>
+                                                <option>Lurín</option>
+                                                <option>Cieneguilla</option>
+                                            </select> 
+                                        </div>
+                                    </div><br>
+                                    <div class="row">                                        
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Tipo de Documento: </b></label><br>
+                                            <select name="tipo_documento" class="form-control" style="width: 300px; height: 40px;">
+                                                <option>--Seleccione--</option>
+                                                <option>DNI</option>
+                                                <option>Pasaporte</option>
+                                            </select> 
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Numero de Documento: </b></label><br>
+                                            <input type="text" placeholder="N° Documento" style="width: 300px; height: 40px;" id="numerodocalumno">  
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Fecha de Nacimiento: </b></label><br>
+                                            <input type="date" style="width: 300px; height: 38px;" class="form-control" id="fechanacimientoalumno">  
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Lugar de Nacimiento: </b></label><br>
+                                            <input type="text" placeholder="Lugar de Nacimiento" style="width: 300px; height: 40px;" id="lugarnacimientoalumno">                                             
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Sexo: </b></label><br>
+                                            <select name="sexo" class="form-control" style="width: 300px; height: 40px;">
+                                                <option>--Seleccione--</option>
+                                                <option>Masculino</option>
+                                                <option>Femenino</option>
+                                            </select> 
+                                        </div>  
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Telefono 1: </b></label><br>
+                                            <input type="text" placeholder="N° Telefono 1" style="width: 300px; height: 40px;" id="telefono1alumno">                                             
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Telefono 2: </b></label><br>
+                                            <input type="text" placeholder="N° Telefono 2" style="width: 300px; height: 40px;" id="telefono2alumno">                                             
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Correo: </b></label><br>
+                                            <input type="text" placeholder="Correo" style="width: 300px; height: 40px;" id="correoalumno">                                             
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Grupo Sanguineo: </b></label><br>
+                                            <select name="GS" class="form-control" style="width: 300px; height: 40px;">
+                                                <option>--Seleccione--</option>
+                                                <option>A+</option>
+                                                <option>A-</option>
+                                                <option>B+</option>
+                                                <option>B-</option>
+                                                <option>AB+</option>
+                                                <option>AB-</option>
+                                                <option>O+</option>
+                                                <option>O-</option>
+                                            </select> 
+                                        </div>    
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Alergias: </b></label><br>
+                                            <select name="Alergias" class="form-control" style="width: 300px; height: 40px;">
+                                                <option>--Seleccione--</option>
+                                                <option>Polvo</option>
+                                                <option>Nuez</option>
+                                                <option>Leche</option>
+                                                <option>Anestesia</option>
+                                                <option>Colorantes</option>
+                                                <option>General</option>
+                                            </select> 
+                                        </div> 
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>IE Anterior: </b></label><br>
+                                            <input type="text" placeholder="IE Anterior" style="width: 300px; height: 40px;" id="ieanterior">                                             
+                                        </div>  
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Religion: </b></label><br>
+                                            <input type="text" placeholder="Religion" style="width: 300px; height: 40px;" id="religion">                                             
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Lengua Materna: </b></label><br>
+                                            <input type="text" placeholder="Lengua Materna" style="width: 300px; height: 40px;" id="lenguamaterna">                                             
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Segunda Lengua: </b></label><br>
+                                            <input type="text" placeholder="Segunda Lengua" style="width: 300px; height: 40px;" id="segundalengua">                                             
+                                        </div>  
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Hermanos Matriculados: </b></label><br>
+                                            <select name="Hermanos" class="form-control" style="width: 300px; height: 40px;">
+                                                <option>--Seleccione--</option>
+                                                <option>SI</option>
+                                                <option>NO</option>
+                                            </select>                                           
+                                        </div> 
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Discapacidad: </b></label><br>
+                                            <input type="text" placeholder="Discapacidad" style="width: 300px; height: 40px;" id="discapacidad">                                             
+                                        </div> 
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Foto: </b></label><br>
+                                            <input type="file" class="input-file" style="width: 300px; height: 40px;" accept="image/gif, image/jpeg, image/png">
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="uname" style="font-size: medium"><b>Copia DNI: </b></label><br>
+                                            <input type="file" class="input-file" style="width: 300px; height: 40px;" accept="image/gif, image/jpeg, image/png, .doc, .docx, .pdf">
+                                        </div>
+                                    </div>
+                                </form>
+                                <br><br>    
+                                <div class="col-lg-3">
+                                    <label for="uname" style="font-size: medium" id="lbl"><b>Encargado del Alumno: </b></label><br>
+                                    <select name="EAlumno" class="form-control" style="width: 300px; height: 40px;" id="ddlencargado" onchange="formView();">
+                                        <option>--Seleccione--</option>
+                                        <option>Padre</option>
+                                        <option>Madre</option>
+                                        <option>Padre y Madre</option>
+                                        <option>Tutor</option>
+                                    </select> 
+                                </div>
+                                <br>
+                                <br>
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal" style="position: fixed; top: 20%; right: 5%">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content" style="width: 600px">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header" style="width: 598px; background-color: #E85E6C; height: 220px">
+                                                <br>
+                                                <div class="col-lg-5"></div>
+                                                <br>
+                                                <br>
+                                                <div class="icon-box">
+                                                    <img src="../static/imgs/baseline_highlight_off_white_48dp.png" th:src="@{/imgs/baseline_highlight_off_white_48dp.png}" style="width: 120px; height: 120px">
+                                                    <br>
+                                                    <h3 style="color: white; font-size: xx-large">&nbsp;&nbsp;&nbsp;Ops!</h3>
+                                                </div>
+                                                <br>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <h3 class="titulo" style="font-size: large; align-content: center">Tiene que escoger al menos a un encargado para el alumno.</h3>
+                                                <h3 class="titulo" style="font-size: large; align-content: center">Intentelo nuevamente.</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="div1">
+                                    <br>
+                                    <br>
+                                    <h3 class="titulo" id="encargado1"></h3>
+                                    <form id="form" name="formularioencargado1"> 
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Nombre: </b></label><br>
+                                                <input type="text" placeholder="Nombre" style="width: 300px; height: 40px;" id="nombreencargado1">                                             
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Apellido Paterno: </b></label><br>
+                                                <input type="text" placeholder="Apellido Paterno" style="width: 300px; height: 40px;" id="apellidoPencargado1">                                             
+                                            </div>     
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Apellido Materno: </b></label><br>
+                                                <input type="text" placeholder="Apellido Materno" style="width: 300px; height: 40px;" id="apellidoMencargado1">                                             
+                                            </div> 
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Direccion: </b></label><br>
+                                                <input type="text" placeholder="Direccion" style="width: 300px; height: 40px;" id="direccionencargado1">                                             
+                                            </div> 
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>País: </b></label><br>
+                                                <select name="paises" class="form-control" style="width: 300px; height: 40px;">
+                                                    <option>--Seleccione--</option>
+                                                    <option>Perú</option>
+                                                </select> 
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Departamentos: </b></label><br>
+                                                <select name="departamentos" class="form-control" style="width: 300px; height: 40px;">
+                                                    <option>--Seleccione--</option>
+                                                    <option>Lima</option>
+                                                    <option>Ancash</option>
+                                                    <option>Apurímac</option>
+                                                    <option>Arequipa</option>
+                                                    <option>Ayacucho</option>
+                                                    <option>Cajamarca</option>
+                                                    <option>Cusco</option>
+                                                    <option>Huancavelica</option>
+                                                    <option>Huánuco</option>
+                                                    <option>Ica</option>
+                                                    <option>Junín</option>
+                                                    <option>La Libertad</option>
+                                                    <option>Lambayeque</option>
+                                                </select> 
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Provincias: </b></label><br>
+                                                <select name="provincias" class="form-control" style="width: 300px; height: 40px;">
+                                                    <option>--Seleccione--</option>
+                                                    <option>Lima</option>
+                                                    <option>Barranca</option>
+                                                    <option>Cajatambo</option>
+                                                    <option>Cañete</option>
+                                                    <option>Huaral</option>
+                                                </select> 
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Distritos: </b></label><br>
+                                                <select name="distritos" class="form-control" style="width: 300px; height: 40px;">
+                                                    <option>--Seleccione--</option>
+                                                    <option>Santiago de Surco</option>
+                                                    <option>San Juan de Lurigancho</option>
+                                                    <option>El agustino</option>
+                                                    <option>Ate</option>
+                                                    <option>Rimac</option>
+                                                    <option>Lurín</option>
+                                                    <option>Cieneguilla</option>
+                                                </select> 
+                                            </div>
+                                        </div><br>
+                                        <div class="row">                                        
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Tipo de Documento: </b></label><br>
+                                                <select name="tipo_documento" class="form-control" style="width: 300px; height: 40px;">
+                                                    <option>--Seleccione--</option>
+                                                    <option>DNI</option>
+                                                    <option>Pasaporte</option>
+                                                </select> 
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Numero de Documento: </b></label><br>
+                                                <input type="text" placeholder="N° Documento" style="width: 300px; height: 40px;" id="numerodocencargado1">  
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Fecha de Nacimiento: </b></label><br>
+                                                <input type="date" style="width: 300px; height: 38px;" class="form-control" id="fechaNencargado1">  
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Lugar de Nacimiento: </b></label><br>
+                                                <input type="text" placeholder="Lugar de Nacimiento" style="width: 300px; height: 40px;" id="lugarnacimientoencargado1">                                             
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Sexo: </b></label><br>
+                                                <select name="sexo" class="form-control" style="width: 300px; height: 40px;">
+                                                    <option>--Seleccione--</option>
+                                                    <option>Masculino</option>
+                                                    <option>Femenino</option>
+                                                </select> 
+                                            </div>  
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Telefono 1: </b></label><br>
+                                                <input type="text" placeholder="N° Telefono 1" style="width: 300px; height: 40px;" id="telefono1encargado1">                                             
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Telefono 2: </b></label><br>
+                                                <input type="text" placeholder="N° Telefono 2" style="width: 300px; height: 40px;" id="telefono2encargado1">                                             
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Grado de Instruccion: </b></label><br>
+                                                <select name="GI" class="form-control" style="width: 300px; height: 40px;">
+                                                    <option>--Seleccione--</option>
+                                                    <option>Ninguna</option>
+                                                    <option>Educacion Inicial</option>
+                                                    <option>Educacion Primaria</option>
+                                                    <option>Educacion Secundaria</option>
+                                                    <option>Medio-Superior Completo</option>
+                                                    <option>Medio-Superior Incompleto</option>
+                                                    <option>Superior Completo</option>
+                                                    <option>Superior Incompleto</option>
+                                                </select> 
+                                            </div>    
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Ocuapcion: </b></label><br>
+                                                <input type="text" placeholder="Ocupacion" style="width: 300px; height: 40px;" id="ocupacionencargado1">                                              
+                                            </div> 
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Centro de Labores: </b></label><br>
+                                                <input type="text" placeholder="Centro de Labores" style="width: 300px; height: 40px;" id="centroLencargado1">                                             
+                                            </div>  
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Telefono del Centro de Labores: </b></label><br>
+                                                <input type="text" placeholder="Telefono del Trabajo" style="width: 300px; height: 40px;" id="telefonoTencargado1">                                              
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Telefono de Emergencias: </b></label><br>
+                                                <input type="text" placeholder="Telefono de Emergencias" style="width: 300px; height: 40px;" id="telefonoEencargado1">                                             
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Estado Civil: </b></label><br>
+                                                <select name="EC" class="form-control" style="width: 300px; height: 40px;">
+                                                    <option>--Seleccione--</option>
+                                                    <option>Casado</option>
+                                                    <option>Soltero</option>
+                                                    <option>Divorciado</option>
+                                                    <option>Viudo/a</option>
+                                                    <option>Ninguno</option>
+                                                </select>                                           
+                                            </div>  
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Vive: </b></label><br>
+                                                <select name="Hermanos" class="form-control" style="width: 300px; height: 40px;">
+                                                    <option>--Seleccione--</option>
+                                                    <option>SI</option>
+                                                    <option>NO</option>
+                                                </select>                                           
+                                            </div> 
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Foto: </b></label><br>
+                                                <input type="file" class="input-file" style="width: 300px; height: 40px;" accept="image/gif, image/jpeg, image/png">
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="uname" style="font-size: medium"><b>Copia DNI: </b></label><br>
+                                                <input type="file" class="input-file" style="width: 300px; height: 40px;" accept="image/gif, image/jpeg, image/png, .doc, .docx, .pdf">
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <br>
+                                    <div id="div2">
+                                        <h3 class="titulo" id="encargado2"></h3>
+                                        <form id="form" name="formularioencargado2"> 
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Nombre: </b></label><br>
+                                                    <input type="text" placeholder="Nombre" style="width: 300px; height: 40px;" id="nombreencargado2">                                             
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Apellido Paterno: </b></label><br>
+                                                    <input type="text" placeholder="Apellido Paterno" style="width: 300px; height: 40px;" id="apellidoPencargado2">                                             
+                                                </div>     
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Apellido Materno: </b></label><br>
+                                                    <input type="text" placeholder="Apellido Materno" style="width: 300px; height: 40px;" id="apellidoMencargado2">                                             
+                                                </div> 
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Direccion: </b></label><br>
+                                                    <input type="text" placeholder="Direccion" style="width: 300px; height: 40px;" id="direccionencargado2">                                             
+                                                </div> 
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>País: </b></label><br>
+                                                    <select name="paises" class="form-control" style="width: 300px; height: 40px;">
+                                                        <option>--Seleccione--</option>
+                                                        <option>Perú</option>
+                                                    </select> 
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Departamentos: </b></label><br>
+                                                    <select name="departamentos" class="form-control" style="width: 300px; height: 40px;">
+                                                        <option>--Seleccione--</option>
+                                                        <option>Lima</option>
+                                                        <option>Ancash</option>
+                                                        <option>Apurímac</option>
+                                                        <option>Arequipa</option>
+                                                        <option>Ayacucho</option>
+                                                        <option>Cajamarca</option>
+                                                        <option>Cusco</option>
+                                                        <option>Huancavelica</option>
+                                                        <option>Huánuco</option>
+                                                        <option>Ica</option>
+                                                        <option>Junín</option>
+                                                        <option>La Libertad</option>
+                                                        <option>Lambayeque</option>
+                                                    </select> 
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Provincias: </b></label><br>
+                                                    <select name="provincias" class="form-control" style="width: 300px; height: 40px;">
+                                                        <option>--Seleccione--</option>
+                                                        <option>Lima</option>
+                                                        <option>Barranca</option>
+                                                        <option>Cajatambo</option>
+                                                        <option>Cañete</option>
+                                                        <option>Huaral</option>
+                                                    </select> 
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Distritos: </b></label><br>
+                                                    <select name="distritos" class="form-control" style="width: 300px; height: 40px;">
+                                                        <option>--Seleccione--</option>
+                                                        <option>Santiago de Surco</option>
+                                                        <option>San Juan de Lurigancho</option>
+                                                        <option>El agustino</option>
+                                                        <option>Ate</option>
+                                                        <option>Rimac</option>
+                                                        <option>Lurín</option>
+                                                        <option>Cieneguilla</option>
+                                                    </select> 
+                                                </div>
+                                            </div><br>
+                                            <div class="row">                                        
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Tipo de Documento: </b></label><br>
+                                                    <select name="tipo_documento" class="form-control" style="width: 300px; height: 40px;">
+                                                        <option>--Seleccione--</option>
+                                                        <option>DNI</option>
+                                                        <option>Pasaporte</option>
+                                                    </select> 
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Numero de Documento: </b></label><br>
+                                                    <input type="text" placeholder="N° Documento" style="width: 300px; height: 40px;" id="numerodocencargado2">  
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Fecha de Nacimiento: </b></label><br>
+                                                    <input type="date" style="width: 300px; height: 38px;" class="form-control" id="fechaNencargado2">  
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Lugar de Nacimiento: </b></label><br>
+                                                    <input type="text" placeholder="Lugar de Nacimiento" style="width: 300px; height: 40px;" id="lugarnacimientoencargado2">                                             
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Sexo: </b></label><br>
+                                                    <select name="sexo" class="form-control" style="width: 300px; height: 40px;">
+                                                        <option>--Seleccione--</option>
+                                                        <option>Masculino</option>
+                                                        <option>Femenino</option>
+                                                    </select> 
+                                                </div>  
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Telefono 1: </b></label><br>
+                                                    <input type="text" placeholder="N° Telefono 1" style="width: 300px; height: 40px;" id="telefono1encargado2">                                             
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Telefono 2: </b></label><br>
+                                                    <input type="text" placeholder="N° Telefono 2" style="width: 300px; height: 40px;" id="telefono2encargado2">                                             
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Grado de Instruccion: </b></label><br>
+                                                    <select name="GI" class="form-control" style="width: 300px; height: 40px;">
+                                                        <option>--Seleccione--</option>
+                                                        <option>Ninguna</option>
+                                                        <option>Educacion Inicial</option>
+                                                        <option>Educacion Primaria</option>
+                                                        <option>Educacion Secundaria</option>
+                                                        <option>Medio-Superior Completo</option>
+                                                        <option>Medio-Superior Incompleto</option>
+                                                        <option>Superior Completo</option>
+                                                        <option>Superior Incompleto</option>
+                                                    </select> 
+                                                </div>    
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Ocuapcion: </b></label><br>
+                                                    <input type="text" placeholder="Ocupacion" style="width: 300px; height: 40px;" id="ocupacionencargado2">                                              
+                                                </div> 
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Centro de Labores: </b></label><br>
+                                                    <input type="text" placeholder="Centro de Labores" style="width: 300px; height: 40px;" id="centroLencargado2">                                             
+                                                </div>  
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Telefono del Centro de Labores: </b></label><br>
+                                                    <input type="text" placeholder="Telefono del Trabajo" style="width: 300px; height: 40px;" id="telefonoTencargado2">                                              
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Telefono de Emergencias: </b></label><br>
+                                                    <input type="text" placeholder="Telefono de Emergencias" style="width: 300px; height: 40px;" id="telefonoEencargado2">                                             
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Estado Civil: </b></label><br>
+                                                    <select name="EC" class="form-control" style="width: 300px; height: 40px;">
+                                                        <option>--Seleccione--</option>
+                                                        <option>Casado</option>
+                                                        <option>Soltero</option>
+                                                        <option>Divorciado</option>
+                                                        <option>Viudo/a</option>
+                                                        <option>Ninguno</option>
+                                                    </select>                                           
+                                                </div>  
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Vive: </b></label><br>
+                                                    <select name="Hermanos" class="form-control" style="width: 300px; height: 40px;">
+                                                        <option>--Seleccione--</option>
+                                                        <option>SI</option>
+                                                        <option>NO</option>
+                                                    </select>                                           
+                                                </div> 
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Foto: </b></label><br>
+                                                    <input type="file" class="input-file" style="width: 300px; height: 40px;" accept="image/gif, image/jpeg, image/png">
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <label for="uname" style="font-size: medium"><b>Copia DNI: </b></label><br>
+                                                    <input type="file" class="input-file" style="width: 300px; height: 40px;" accept="image/gif, image/jpeg, image/png, .doc, .docx, .pdf">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col-lg-9"></div>
+                                <button class="btn btn-danger btn-group-lg" id="btncancelar"><span class="fa fa-times"></span>  Cancelar</button>
+                                <button class="btn btn-primary btn-group-lg" id="btnmatricular"><span class="fa fa-school"></span>  Matricular Alumno</button>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <script>
+                $('#div1').hide();
+                $('#div2').hide();
+                $('#btnmatricular').hide();
+                function formView() {
+                    var ddl = document.getElementById("ddlencargado");
+                    var index = ddl.options[ddl.selectedIndex].index;
+                    switch (index) {
+                        case 1:
+                            $("#encargado1").text('Datos Generales del Padre');
+                            $("#encargado2").empty();
+                            $('#div1').show();
+                            $('#div2').hide();
+                            $('#btnmatricular').show();
+                            break;
+                        case 2:
+                            $("#encargado1").text('Datos Generales de la Madre');
+                            $("#encargado2").empty();
+                            $('#div1').show();
+                            $('#div2').hide();
+                            $('#btnmatricular').show();
+                            break;
+                        case 3:
+                            $("#encargado1").text('Datos Generales del Padre');
+                            $("#encargado2").text('Datos Generales de la Madre');
+                            $('#div1').show();
+                            $('#div2').show();
+                            $('#btnmatricular').show();
+                            break;
+                        case 4:
+                            $("#encargado1").text('Datos Generales del Tutor');
+                            $("#encargado2").empty();
+                            $('#div1').show();
+                            $('#div2').hide();
+                            $('#btnmatricular').show();
+                            break;
+                        case 0:
+                            //alert("ERROR, debe seleccionar al menos un encargado");
+                            $('#div1').hide();
+                            $('#div2').hide();
+                            $('#btnmatricular').hide();
+                            modal();
+                    }
+                    function modal() {
+                        $("#myModal").modal("show");
+                    }
+                }
+            </script> 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>SIAVIE - LOGIN</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>   
+        <link href="#" th:href="@{/css/login.css}" rel="stylesheet" />
+        <link href="#" th:href="@{/css/body.css}" rel="stylesheet" />
+    </head>
+    <body>     
+        <div class="row" style="height: 100px"></div>
+        <div class="row">
+            <div class="col-lg-4"></div> 
+            <div class="col-lg-4">
+                <div class="well" style="width: 550px;height: 400px">               
+                    <form class="form-signin">
+                        <h2 class="form-signin-heading">INICIAR SESIÓN</h2><br>
+                        <label for="inputEmail" class="sr-only">Usuario</label>
+                        <input type="text" id="inputUsername" class="form-control" placeholder="Usuario"/><br>
+                        <label for="inputPassword" class="sr-only">Contraseña</label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña"/><br>
+                        <div class="col-lg-8"></div>
+                        <button class="btn btn-primary" type="submit" style="width: 120px">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Ingresar
+                        </button>
+                    </form>     
+                </div>                
+            </div>
+        </div>
+    </body>
+</html>

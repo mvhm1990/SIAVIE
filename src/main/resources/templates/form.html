@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <form action="#" th:action="@{/Prueba2/addPersona}" th:object="${persona}" method="post">
+            <p>NOMBRE: <input type="text" th:field="*{nombre}"/></p>
+            <p th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}">El nombre tiene errores</p>
+            <p>EDAD: <input type="number" th:field="*{edad}"/></p>
+            <p th:if="${#fields.hasErrors('edad')}" th:errors="*{edad}">La edad tiene errores</p>
+            <p><input type="submit" value="Enviar"/></p>
+        </form>
+    </body>
+</html>
