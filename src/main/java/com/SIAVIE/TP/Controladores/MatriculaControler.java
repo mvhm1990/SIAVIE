@@ -1,4 +1,5 @@
 package com.SIAVIE.TP.Controladores;
+
 import com.SIAVIE.TP.Entity.Pais;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,13 +15,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
 @Controller
-@RequestMapping("/MatriculaDirecta")
+@RequestMapping("/MatriculaControler")
 public class MatriculaControler {
 
     public static final String EXAMPLE_VIEW1 = "Matricula";
 
     @Autowired
-    @Qualifier("paisServiceImpl")
+    @Qualifier("PaisServiceImpl")
     private PaisService paisService;
    
     @GetMapping("/")
