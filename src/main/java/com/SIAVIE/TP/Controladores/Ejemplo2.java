@@ -13,8 +13,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.servlet.view.RedirectView;
 
-@Controller
-@RequestMapping("/Prueba2")
+//@Controller
+//@RequestMapping("/Prueba2")
 public class Ejemplo2 {
     public static final String FORM_VIEW = "form";
     public static final String RESULT_VIEW = "ejemplo";

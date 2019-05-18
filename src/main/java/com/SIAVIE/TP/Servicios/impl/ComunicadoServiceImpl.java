@@ -16,10 +16,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 
 
-/**
- *
- * @author Asus
- */
+
 @Service("ComunicadoServiceImpl")
 public class ComunicadoServiceImpl implements ComunicadoService {
 
@@ -29,9 +26,19 @@ public class ComunicadoServiceImpl implements ComunicadoService {
 
     @Override
     public List<Comunicado> listarComunicados() {
-        List<Comunicado> app = new ArrayList<>();
-        app = comunicadoJpaRepository.findAll();
-        return app;
+        List<Comunicado> listacomunicados ;
+        listacomunicados = comunicadoJpaRepository.findAll();
+        return listacomunicados;
+    }
+
+    @Override
+    public Comunicado obtenerEncabezado(String encabezado) {
+        return comunicadoJpaRepository.findByEncabezado(encabezado);
+    }
+
+    @Override
+    public List<Comunicado> obtenerListaPorFecha(String fecha_Creacion) {
+        return comunicadoJpaRepository.findAllByFecha_Creacion(fecha_Creacion);
     }
 
 }

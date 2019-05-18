@@ -3,6 +3,9 @@
     "attributes": {
         "th:text": {},
         "th:if": {},
+        "integrity": {
+            "context": "script"
+        },
         "th:action": {},
         "th:src": {},
         "th:each": {},

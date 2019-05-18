@@ -4,12 +4,21 @@
  * and open the template in the editor.
  */
 package com.SIAVIE.TP.Servicios;
+
 import com.SIAVIE.TP.Entity.Comunicado;
 import java.util.List;
+
 /**
  *
  * @author Asus
  */
 public interface ComunicadoService {
+
     public abstract List<Comunicado> listarComunicados();
+
+    public abstract Comunicado obtenerEncabezado(String encabezado);
+    
+    public abstract List<Comunicado> obtenerListaPorFecha(String fecha_creacion);
+    
+    
 }

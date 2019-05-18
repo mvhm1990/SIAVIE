@@ -14,22 +14,22 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
-@Controller
-@RequestMapping("/MatriculaControler")
+//@Controller
+//@RequestMapping("/MatriculaControler")
 public class MatriculaControler {
 
-    public static final String EXAMPLE_VIEW1 = "Matricula";
-
-    @Autowired
-    @Qualifier("PaisServiceImpl")
-    private PaisService paisService;
-   
-    @GetMapping("/")
-    public String redirectLogin(){
-        List<Pais> app= new ArrayList<>();
-        System.out.println("--------------------------------------------------------------------------------------------------------------------");
-        app=paisService.listaPaises();
-      System.out.println(""+app.toString());
-    return "Matricula";
-    }
+//    public static final String EXAMPLE_VIEW1 = "Matricula";
+//
+//    @Autowired
+//    @Qualifier("PaisServiceImpl")
+//    private PaisService paisService;
+//   
+//    @GetMapping("/")
+//    public String redirectLogin(){
+//        List<Pais> app= new ArrayList<>();
+//        System.out.println("--------------------------------------------------------------------------------------------------------------------");
+//        app=paisService.listaPaises();
+//      System.out.println(""+app.toString());
+//    return "Matricula";
+//    }
 }
